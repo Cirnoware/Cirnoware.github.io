@@ -545,6 +545,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#05-disjoint-sets" class="md-nav__link">
+    05 Disjoint Sets
+  </a>
+  
+    <nav class="md-nav" aria-label="05 Disjoint Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1r" class="md-nav__link">
+    1.等价关系R
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2.动态等价关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3.基本操作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.实现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5smart-union-algorithms" class="md-nav__link">
+    5.Smart Union Algorithms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.路径压缩
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1146,6 +1201,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#05-disjoint-sets" class="md-nav__link">
+    05 Disjoint Sets
+  </a>
+  
+    <nav class="md-nav" aria-label="05 Disjoint Sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1r" class="md-nav__link">
+    1.等价关系R
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2.动态等价关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3.基本操作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.实现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5smart-union-algorithms" class="md-nav__link">
+    5.Smart Union Algorithms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.路径压缩
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1353,8 +1463,12 @@
 <ul>
 <li>完全二叉树</li>
 <li>任意节点的值大于其子节点的值</li>
-<li>任意节点的值小于其父节点的值</li>
-<li>用数组实现<ul>
+<li>
+<p>任意节点的值小于其父节点的值</p>
+</li>
+<li>
+<p>用数组实现</p>
+<ul>
 <li>从1开始编号</li>
 <li>对于某个节点：（若结果符合条件，否则就说明没有）</li>
 <li>父节点编号为<script type="math/tex; mode=display">i/2</script>(对于某个节点)</li>
@@ -1371,6 +1485,57 @@
 <li>Insert（向上置换）</li>
 <li>DeleteMin（向下置换）</li>
 </ol>
+<hr />
+<h2 id="05-disjoint-sets">05 Disjoint Sets<a class="headerlink" href="#05-disjoint-sets" title="Permanent link">&para;</a></h2>
+<h3 id="1r">1.等价关系R<a class="headerlink" href="#1r" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>定义在集合上的关系</p>
+</blockquote>
+<h3 id="2_1">2.动态等价关系<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<h3 id="3_1">3.基本操作<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>MakeSet(x)：建立一个新的集合，该集合中只包含元素x</li>
+<li>Set Union(x,y)：将包含元素x和y的两个集合合并成一个新的集合<ul>
+<li><span class="arithmatex"><span class="MathJax_Preview">S_1 \cup S_2：以S_1的根为根</span><script type="math/tex">S_1 \cup S_2：以S_1的根为根</script></span>（谁在后边，改的就是谁的根）</li>
+</ul>
+</li>
+<li>Find(x)：找到包含元素x的集合的名字</li>
+</ol>
+<h3 id="4">4.实现<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>数组实现：S[Elements]= The element's parent</p>
+<blockquote>
+<p>S[Root] = 0</p>
+</blockquote>
+<p><code>SetType  Find ( ElementType X, DisjSet S ){
+     for ( ; S[X] &gt; 0; X = S[X] ) ;
+ return  X ;
+ }</code></p>
+</li>
+<li>
+<p>链表实现</p>
+</li>
+</ol>
+<h3 id="5smart-union-algorithms">5.Smart Union Algorithms<a class="headerlink" href="#5smart-union-algorithms" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Union by Size</p>
+<blockquote>
+<p>S[Root] = -Size</p>
+</blockquote>
+</li>
+<li>
+<p>Union by Height</p>
+</li>
+</ul>
+<h3 id="6">6.路径压缩<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>和Size Union一起使用</li>
+<li>和Height Union一起使用：Union by Rank(Estimated Height)
+  最差情形：<img alt="" src="5.6.1.png" />  </li>
+</ul>
+<p>---以上为期中考试内容---</p>
 
 
 
