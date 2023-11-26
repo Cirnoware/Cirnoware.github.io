@@ -988,6 +988,94 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    下料问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    选址问题 -- 二维情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    常用的一些处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    赛程编制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svm" class="md-nav__link">
+    支持向量机SVM
+  </a>
+  
+    <nav class="md-nav" aria-label="支持向量机SVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mathbfwcdot-x-b-0mathbfwcdot-x-b-0" class="md-nav__link">
+    超平面：\mathbf{w\cdot x} + b = 0\mathbf{w\cdot x} + b = 0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    线性规划求解
+  </a>
+  
+    <nav class="md-nav" aria-label="线性规划求解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    线性规划的矩阵形式
+  </a>
+  
+    <nav class="md-nav" aria-label="线性规划的矩阵形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    标准型：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    整数线性规划
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1725,6 +1813,94 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    下料问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    选址问题 -- 二维情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    常用的一些处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    赛程编制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svm" class="md-nav__link">
+    支持向量机SVM
+  </a>
+  
+    <nav class="md-nav" aria-label="支持向量机SVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mathbfwcdot-x-b-0mathbfwcdot-x-b-0" class="md-nav__link">
+    超平面：\mathbf{w\cdot x} + b = 0\mathbf{w\cdot x} + b = 0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    线性规划求解
+  </a>
+  
+    <nav class="md-nav" aria-label="线性规划求解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    线性规划的矩阵形式
+  </a>
+  
+    <nav class="md-nav" aria-label="线性规划的矩阵形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    标准型：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    整数线性规划
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2046,6 +2222,55 @@
   - 应用问题
   - 实际案例</p>
 <h3 id="_36">食谱问题<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<h3 id="_37">下料问题<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<p><mark>0-1变量的使用</mark>
+- 决策变量
+  - <span class="arithmatex"><span class="MathJax_Preview">x_{ji}</span><script type="math/tex">x_{ji}</script></span>：第j种钢管截取的第i种短管数量</p>
+<ul>
+<li>约束条件</li>
+<li><span class="arithmatex"><span class="MathJax_Preview">\sum \limits_{i= 1}^{k} x_{ji}w_i \leq W</span><script type="math/tex">\sum \limits_{i= 1}^{k} x_{ji}w_i \leq W</script></span></li>
+<li><span class="arithmatex"><span class="MathJax_Preview">\sum \limits_{i= 1}^{n} x_{ji} \geq b_i</span><script type="math/tex">\sum \limits_{i= 1}^{n} x_{ji} \geq b_i</script></span></li>
+</ul>
+<h3 id="-">选址问题 -- 二维情形<a class="headerlink" href="#-" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>思想：将二次约束变为一次约束</p>
+</blockquote>
+<h3 id="_38">常用的一些处理<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<ul>
+<li>0-1变量的使用
+  设
+  <script type="math/tex; mode=display">
+  x_i = j \Rightarrow x_{ij} = \left\{
+  \begin{aligned}
+  1, &\quad x_i = j \\
+  0, &\quad x_i \neq j
+  \end{aligned}
+  \right.
+  </script>
+</li>
+</ul>
+<p>累计的处理：<span class="arithmatex"><span class="MathJax_Preview">\sum\limits_{i = 1}^{m}\sum\limits_{j = 1}^{n} jx_{ij}</span><script type="math/tex">\sum\limits_{i = 1}^{m}\sum\limits_{j = 1}^{n} jx_{ij}</script></span></p>
+<h3 id="_39">赛程编制<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<h3 id="svm">支持向量机SVM<a class="headerlink" href="#svm" title="Permanent link">&para;</a></h3>
+<h4 id="mathbfwcdot-x-b-0mathbfwcdot-x-b-0">超平面：<span class="arithmatex"><span class="MathJax_Preview">\mathbf{w\cdot x} + b = 0</span><script type="math/tex">\mathbf{w\cdot x} + b = 0</script></span><a class="headerlink" href="#mathbfwcdot-x-b-0mathbfwcdot-x-b-0" title="Permanent link">&para;</a></h4>
+<ul>
+<li>距离：<span class="arithmatex"><span class="MathJax_Preview">\frac{|\mathbf{w\cdot x} + b|}{||\mathbf{w}||}</span><script type="math/tex">\frac{|\mathbf{w\cdot x} + b|}{||\mathbf{w}||}</script></span></li>
+</ul>
+<h3 id="_40">线性规划求解<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<h4 id="_41">线性规划的矩阵形式<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h4>
+<ul>
+<li>目标函数：<span class="arithmatex"><span class="MathJax_Preview">min\quad \mathbf{c^Tx}</span><script type="math/tex">min\quad \mathbf{c^Tx}</script></span></li>
+<li>约束条件：<span class="arithmatex"><span class="MathJax_Preview">\mathbf{Ax} = \mathbf{b}</span><script type="math/tex">\mathbf{Ax} = \mathbf{b}</script></span></li>
+<li>非负约束：<span class="arithmatex"><span class="MathJax_Preview">\mathbf{x} \geq 0</span><script type="math/tex">\mathbf{x} \geq 0</script></span>  </li>
+</ul>
+<h5 id="_42">标准型：<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h5>
+<ul>
+<li>目标函数：极小化</li>
+<li>约束条件：等式约束</li>
+<li>非负约束：<span class="arithmatex"><span class="MathJax_Preview">\mathbf{x} \geq 0</span><script type="math/tex">\mathbf{x} \geq 0</script></span></li>
+<li>等式约束右端均为非负常数</li>
+</ul>
+<h3 id="_43">整数线性规划<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
 
 
 
