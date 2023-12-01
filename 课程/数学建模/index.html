@@ -1128,6 +1128,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    组合优化
+  </a>
+  
+    <nav class="md-nav" aria-label="组合优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pnp" class="md-nav__link">
+    P问题与NP问题
+  </a>
+  
+    <nav class="md-nav" aria-label="P问题与NP问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    P问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np" class="md-nav__link">
+    NP问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np_1" class="md-nav__link">
+    NP完全问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np-hard" class="md-nav__link">
+    NP-Hard问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2000,6 +2054,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    组合优化
+  </a>
+  
+    <nav class="md-nav" aria-label="组合优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pnp" class="md-nav__link">
+    P问题与NP问题
+  </a>
+  
+    <nav class="md-nav" aria-label="P问题与NP问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    P问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np" class="md-nav__link">
+    NP问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np_1" class="md-nav__link">
+    NP完全问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np-hard" class="md-nav__link">
+    NP-Hard问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2376,12 +2484,18 @@
 <h3 id="_43">多目标规划<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
 <h4 id="_44">解的类型<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h4>
 <ul>
-<li>绝对最优解（不一定存在）</li>
+<li>绝对最优解（不一定存在）<ul>
 <li>在所有方面都是最好的</li>
-<li>Pareto最优解</li>
+</ul>
+</li>
+<li>Pareto最优解<ul>
 <li>找不到每一个方面都比它好的解（即在某一方面时最好的（且不是并列的））</li>
-<li>弱Pareto最优解（不常用）</li>
+</ul>
+</li>
+<li>弱Pareto最优解（不常用）<ul>
 <li>找不到每一个方面都严格比他好的解（即在某一方面时最好的（可以并列））</li>
+</ul>
+</li>
 </ul>
 <h4 id="_45">求解<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h4>
 <ol>
@@ -2390,27 +2504,31 @@
 <blockquote>
 <p>将多目标规划转化为单目标规划，计算<span class="arithmatex"><span class="MathJax_Preview">min \sum \limits_{k=1}^{p}\lambda _kf_k(x)</span><script type="math/tex">min \sum \limits_{k=1}^{p}\lambda _kf_k(x)</script></span></p>
 </blockquote>
-</li>
-<li>
-<p>求得结果为Pareto最优解</p>
+<ul>
+<li>求得结果为Pareto最优解</li>
+</ul>
 </li>
 <li>
 <p>主要目标法</p>
 <blockquote>
 <p>将多目标规划转化为单目标规划，计算<span class="arithmatex"><span class="MathJax_Preview">min \ f_k(x)，满足f_i(x)&lt;u_i(i\neq k</span><script type="math/tex">min \ f_k(x)，满足f_i(x)<u_i(i\neq k</script></span></p>
 </blockquote>
-</li>
-<li>
-<p>求得结果为弱Pareto最优解</p>
+<ul>
+<li>求得结果为弱Pareto最优解</li>
+</ul>
 </li>
 <li>
 <p>理想点法</p>
 </li>
-<li>分层排序法<blockquote>
+<li>
+<p>分层排序法</p>
+<blockquote>
 <p>在最重要的目标上求最优解，然后在次重要的目标上求最优解，以此类推</p>
 </blockquote>
-</li>
+<ul>
 <li>求得结果为Pareto最优解</li>
+</ul>
+</li>
 </ol>
 <h3 id="_46">投资组合问题<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -2424,6 +2542,45 @@
 <ul>
 <li>风险：投资组合的收益率的方差</li>
 </ul>
+<hr />
+<h2 id="_48">组合优化<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>从离散的对象集合中选取一个或多个对象，使得满足一定的约束条件，使得某种指标达到最优</p>
+</blockquote>
+<h3 id="pnp">P问题与NP问题<a class="headerlink" href="#pnp" title="Permanent link">&para;</a></h3>
+<h4 id="p">P问题<a class="headerlink" href="#p" title="Permanent link">&para;</a></h4>
+<ul>
+<li>有（确定性）多项式时间内算法的问题</li>
+</ul>
+<h4 id="np">NP问题<a class="headerlink" href="#np" title="Permanent link">&para;</a></h4>
+<ul>
+<li>有非确定性多项式时间内算法的问题</li>
+<li>证明：多项式时间内可验证某个解是不是最优解（现实中不存在）</li>
+<li>
+<p>一个例子：Hamilton回路</p>
+<blockquote>
+<p>是否存在一条路径，经过每个顶点一次且仅一次</p>
+</blockquote>
+<p>对于这个问题，我们可以很容易地验证一个解是否是满足条件，但是我们却很难找到这样的解</p>
+</li>
+</ul>
+<h4 id="np_1">NP完全问题<a class="headerlink" href="#np_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义<ul>
+<li>一个问题是NP问题</li>
+<li>所有NP问题都可以归约为它（解决了它，就能以多项式时间解决所有NP问题）</li>
+</ul>
+</li>
+</ul>
+<h4 id="np-hard">NP-Hard问题<a class="headerlink" href="#np-hard" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义<ul>
+<li>所有NP问题都可以归约为它（不一定是NP问题）</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="https://pic1.zhimg.com/80/v2-ebd7196e68af4f277e4b55c2f0ddb768_1440w.webp" />
+<center>P和NP问题</center></p>
 
 
 
