@@ -1228,6 +1228,60 @@
     图论
   </a>
   
+    <nav class="md-nav" aria-label="图论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    最小生成树
+  </a>
+  
+    <nav class="md-nav" aria-label="最小生成树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krukal" class="md-nav__link">
+    Krukal算法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    最短路
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    特殊顶点集
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    匹配
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2206,6 +2260,60 @@
     图论
   </a>
   
+    <nav class="md-nav" aria-label="图论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    最小生成树
+  </a>
+  
+    <nav class="md-nav" aria-label="最小生成树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krukal" class="md-nav__link">
+    Krukal算法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    最短路
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    特殊顶点集
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    匹配
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2696,6 +2804,43 @@
 <h3 id="_53">近似算法<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
 <hr />
 <h2 id="_54">图论<a class="headerlink" href="#_54" title="Permanent link">&para;</a></h2>
+<h3 id="_55">概念<a class="headerlink" href="#_55" title="Permanent link">&para;</a></h3>
+<ul>
+<li>迹：经过边不相同的途径</li>
+<li>路：经过顶点不相同的途径<ul>
+<li><span class="arithmatex"><span class="MathJax_Preview">路\in迹</span><script type="math/tex">路\in迹</script></span></li>
+</ul>
+</li>
+<li>二部图：顶点可分为两个集合，每条边的两个顶点分别属于不同的集合<ul>
+<li>G为二部图的充要条件：G中不含奇数环（奇数条边构成的环）</li>
+</ul>
+</li>
+<li>子图<ul>
+<li>生成子图：删去一些边</li>
+<li>导出子图：删去一些点，以及与这些点相关的边</li>
+</ul>
+</li>
+</ul>
+<h3 id="_56">最小生成树<a class="headerlink" href="#_56" title="Permanent link">&para;</a></h3>
+<h4 id="krukal">Krukal算法<a class="headerlink" href="#krukal" title="Permanent link">&para;</a></h4>
+<ul>
+<li>思想：从小到大加入边，若不构成环，则加入（贪心）</li>
+</ul>
+<h3 id="_57">最短路<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h3>
+<h3 id="_58">特殊顶点集<a class="headerlink" href="#_58" title="Permanent link">&para;</a></h3>
+<ul>
+<li>顶点覆盖：顶点集中的每条边至少有一个端点在集合中（可有混日子的，去掉也是独立集）</li>
+<li>独立集：顶点集中的任意两个顶点都不相邻</li>
+<li>支配集：顶点集中的每个顶点或者在集合中，或者与集合中的某个顶点相邻</li>
+<li>团：团中的任意两个顶点都相邻</li>
+</ul>
+<h3 id="_59">匹配<a class="headerlink" href="#_59" title="Permanent link">&para;</a></h3>
+<ul>
+<li>定义：图G的一个匹配是G的一个边集，其中任意两条边都不相邻</li>
+<li>最大匹配：边数最多的匹配</li>
+<li>完美匹配：所有顶点都和匹配中的某条边相关联</li>
+<li>最大权匹配：权值和最大的匹配</li>
+</ul>
 
 
 
